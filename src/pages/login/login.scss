@@ -1,0 +1,174 @@
+.login_popup{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121524;
+
+    .box{
+        height: 400px;
+        width: 400px;
+        overflow: hidden;
+        border-radius: 10px;
+        backdrop-filter: blur(3.5px );
+        inset: 2px;
+
+        // &:before{
+        //     content: '';
+        //     position: absolute;
+        //     top: -50%;
+        //     left: -50%;
+        //     width: 400px;
+        //     height: 400px;
+        //     background: linear-gradient(0deg, transparent, #ff00ea ,#ff00ea);
+        //     transform-origin: bottom right;
+        //     animation: animate 6s linear infinite;
+        // }
+
+        // &:after{
+        //     content: '';
+        //     position: absolute;
+        //     top: -50%;
+        //     left: -50%;
+        //     width: 400px;
+        //     height: 400px;
+        //     background: linear-gradient(0deg, transparent, #ff00ea ,#ff00ea);
+        //     transform-origin: bottom right;
+        //     animation: animate 6s linear infinite;
+        //     animation-delay: -3s;
+        // }
+
+        // @keyframes animate{
+        //     0%
+        //     {
+        //         transform: rotate(0deg);
+        //     }
+        //     100%{
+        //         transform: rotate(360deg);
+        //     }
+        // }
+
+
+        .form{
+            position: absolute;
+            border-radius: 10px;
+            background: #28292d;
+            z-index: 10;
+            
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                color: white;
+                font-size: 2.5rem;
+                font-weight: 500;
+                text-align: center;
+                letter-spacing: 0.05em;
+                
+    
+            }
+            
+            .input_box{
+                position: relative;
+                width: 100%;
+                margin-top: 4rem;
+                display: flex;
+                
+            
+                span{
+                    position: absolute;
+                    left: 0;
+                    padding: 20px 10px 10px ;   
+                    font-size: 1.6rem;
+                    color: azure;
+                    pointer-events: none;
+                    letter-spacing: 0.05em;
+                    transition: 0.5s;
+                }
+
+                input{
+                    position: relative;
+                    width: 100%;
+                    padding: 20px 10px 10px;
+                    border: none;
+                    outline: none;
+                    background:transparent;
+                    font-size: 1.6rem;
+                    letter-spacing: 0.05em;
+                    color: #23242a;
+                    z-index: 1;
+                    color: white;
+                    
+
+                    &:valid ~ span,
+                    &:focus ~ span
+                    {
+                        color:#ff00ea;
+                        transform: translateX(-10px) translateY(-42px);
+                        font-size: 1.4rem;
+                    }
+                }       
+
+                i{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: #ff00ea;
+                    border-radius: 6px;
+                    transition: 0.5s;
+                    pointer-events: none;
+                }
+                
+                
+            }
+
+            .btn_login{
+                width: 150px;
+                min-height: 30px;
+                margin: 1rem 0;
+                background: #ff00ea;
+                border: none;
+                border-radius: 2rem;
+                align-self: center;
+                
+                &:hover{
+                    cursor: pointer;
+                    background: rgba(255, 0, 234, 0.8);
+                    color: white;
+                    transition: 0.5s;
+                }
+            }
+
+
+            .reset_pass{
+                text-align: right;
+                margin-top: 0.5rem;
+            }
+
+
+
+            span{
+                color: white;
+                text-align: center;
+                font-size: 1.1rem;
+                letter-spacing: 0.5px;
+            }
+
+            a{
+                
+                color: white;
+
+                &:hover{
+                    color: rgba(255, 0, 234, 0.8);
+                    transition: 0.5s;
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.production{
+    display: flex;
+    width: 100%;
+
+    .productionContainer{
+        flex: 6;
+        
+        .productionChart{
+            padding: 10px;
+            flex-direction: row;
+
+            .header{
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 40px;
+                border: 1px solid lightgray;
+
+                .device{
+
+                    .deviceSelector{
+                        width: 250px;
+                        border: none;
+                        outline: transparent;
+                    }
+
+                }
+
+                .date{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .datePicker{
+                        text-align: center;
+                        width: 100px;
+                    }
+
+                    svg{
+                        margin: 5px;
+                        cursor: pointer;
+                        font-size: 15px;
+                    }
+
+                    
+                }
+
+                .intervalSelector{
+                    width: 150px;
+                }
+            }
+
+            .info{
+                width: inherit;
+                height: 500px;
+                border: 1px solid red;
+            }
+        }
+
+    }
+}
