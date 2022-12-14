@@ -8,8 +8,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Install everything after cloning a repository.
-Use it after the first download.
+Installs everything after the first repository cloning.
 
 ### `npm start`
 
